@@ -4,9 +4,9 @@ import { FormularioComponent } from './formulario/formulario.component';
 import { ErrorComponent } from './error/error.component';
 
 export const routes: Routes = [
-    { path: '', component: ListadoProductosComponent }, // localhost:55977/
-    { path: 'listado', component: ListadoProductosComponent }, // localhost:55977/listado
+    { path: '', component: ListadoProductosComponent },
+    { path: 'listado', component: ListadoProductosComponent },
     { path: 'agregar', component: FormularioComponent },
-    { path: 'editar/:id', component: FormularioComponent },
+    { path: 'editar/:llave', component: FormularioComponent },
     { path: '**', component: ErrorComponent }
 ];
